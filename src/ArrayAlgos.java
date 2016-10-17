@@ -6,9 +6,19 @@ public class ArrayAlgos {
     public static void main(String args[])
     {
 
-       int[] arr = { 2, 6, 2, 2, 6, 2, 2, 8, 2, 1 };
-       int majority = getMajorityElement(arr);
-       System.out.println("Majority element is : " + majority);
+       //calling get getMajorityElement function
+//       int[] arr = { 2, 6, 2, 2, 6, 2, 2, 8, 2, 1 };
+//       int majority = getMajorityElement(arr);
+//       System.out.println("Majority element is : " + majority);
+
+        //calling get stairSearch function
+        int[][] mat =  {   { 2, 6, 7, 11},
+                           { 3, 8, 10, 12},
+                           { 4, 9, 11, 13},
+                           { 5, 15, 16, 18}
+                       };
+
+        System.out.println(stairSearch(mat, 4, 16));
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -58,5 +68,37 @@ public class ArrayAlgos {
 
         return null;
 
+    }
+
+    public static boolean stairSearch(int[][] matrix,int n, int item)
+    {
+        //Given a sorted matrix where rows and the columns are sorted.
+        //Write an algorithm to search an element in the matrix in O(n)
+
+        int r = 0; //rows
+        int c = n-1; //cols
+
+        if (item < matrix[0][0] || item > matrix[n-1][n-1])
+        {
+            return false;
+        }
+
+        while (r < n && c >= 0)
+        {
+             if (item < matrix[r][c])
+             {
+                 c--;
+             }
+             else if(item > matrix[r][c])
+             {
+                 r++;
+             }
+             else
+             {
+              return true;
+             }
+
+        }
+        return false;
     }
 }
