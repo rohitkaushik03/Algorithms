@@ -46,12 +46,14 @@ public class MyLinkedList
             {
                 newNode.next=currentNode.next;
                 currentNode.next=newNode;
+                return;
             }
             currentNode=currentNode.next;
         }
 
 
     }
+
     public void PrintList()
     {
         Node nd = head;
@@ -76,5 +78,36 @@ public class MyLinkedList
             nd=nd.next;
         }
         return null;
+    }
+
+    public void DeleteNode(int data)
+    {
+        Node current = head;
+        if (current.data==data)
+        {
+            head=current.next;
+            return;
+        }
+        else
+        {
+            Node prev = head;
+            current = head.next;
+
+            while (current !=null)
+            {
+                if(current.data==data)
+                {
+                    prev.next=current.next;
+                    return;
+                }
+                else
+                {
+                    prev=current;
+                    current = current.next;
+                }
+
+            }
+
+        }
     }
 }

@@ -20,6 +20,13 @@ public class LinkedListMain
 
         list.PrintList();
 
+        //Delete node from LinkedList
+        list.DeleteNode(10);
+
+        System.out.println("*************");
+
+        list.PrintList();
+
         Node nd = list.findNode(20);
     }
 }
