@@ -110,4 +110,21 @@ public class MyLinkedList
 
         }
     }
+
+    public void ReverseLinkedList()
+    {
+        //Reverse Linked list iterative method
+        Node current=head;
+        Node previous=null;
+        Node nxtNode;
+
+        while (current != null)
+        {
+            nxtNode = current.next;
+            current.next=previous;
+            previous=current;
+            current=nxtNode;
+        }
+        head=previous;
+    }
 }

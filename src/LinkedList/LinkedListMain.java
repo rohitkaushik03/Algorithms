@@ -21,8 +21,9 @@ public class LinkedListMain
         list.PrintList();
 
         //Delete node from LinkedList
-        list.DeleteNode(10);
+        //list.DeleteNode(10);
 
+        list.ReverseLinkedList();
         System.out.println("*************");
 
         list.PrintList();
