@@ -1,3 +1,8 @@
+package FactoryDesignPattern;
+
+import FactoryDesignPattern.Rectangle;
+import FactoryDesignPattern.Shape;
+
 /**
  * Created by rkaushik on 9/30/16.
  */
