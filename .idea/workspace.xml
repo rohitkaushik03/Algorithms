@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6551fe3a-7adb-4ddd-ac8d-5dfe825715b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FirstProject/ArrayAlgos.class" afterPath="$PROJECT_DIR$/out/production/FirstProject/ArrayAlgos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FirstProject/Hello.class" afterPath="$PROJECT_DIR$/out/production/FirstProject/Hello.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayAlgos.java" afterPath="$PROJECT_DIR$/src/ArrayAlgos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Hello.java" afterPath="$PROJECT_DIR$/src/Hello.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" afterPath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +27,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35502958" vertical-offset="480" max-vertical-offset="1080">
-              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1080">
+              <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
               <folding>
                 <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4733728" vertical-offset="0" max-vertical-offset="600">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,8 +72,8 @@
         <option value="$PROJECT_DIR$/src/FactoryDesignPattern/FactoryPattern.java" />
         <option value="$PROJECT_DIR$/src/FactoryDesignPattern/ShapeFactory.java" />
         <option value="$PROJECT_DIR$/src/Hello.java" />
-        <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
         <option value="$PROJECT_DIR$/src/ArrayAlgos.java" />
+        <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
       </list>
     </option>
   </component>
@@ -593,8 +598,14 @@
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -910,25 +921,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35502958" vertical-offset="480" max-vertical-offset="1080">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1080">
+          <caret line="138" column="18" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
           <folding>
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4733728" vertical-offset="0" max-vertical-offset="600">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
