@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 /**
  * Created by rkaushik on 10/4/16.
  */
@@ -18,7 +20,13 @@ public class ArrayAlgos {
                            { 5, 15, 16, 18}
                        };
 
-        System.out.println(stairSearch(mat, 4, 16));
+        //System.out.println(stairSearch(mat, 4, 16));
+        //String output = ReverseString("I am the best");
+        //System.out.println(output);
+
+        String output1 = ReverseString2("Hello World");
+        System.out.println(output1);
+
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -101,4 +109,45 @@ public class ArrayAlgos {
         }
         return false;
     }
+
+    public static String ReverseString(String strInput)
+    {
+        char[] chrInput = strInput.toCharArray();
+        char[] chroutput = new char[chrInput.length];
+
+        int j=0;
+        for (int i=chrInput.length -1;i >= 0;i--)
+        {
+            chroutput[j]=chrInput[i];
+            j++;
+        }
+        String strOuput = new String(chroutput);
+        return strOuput;
+    }
+
+    public static String ReverseString2(String strInput)
+    {
+        //The only "gotcha" is to try to do it in place
+        char[] chrInput = strInput.toCharArray();
+        int start = 0;
+        int end = chrInput.length - 1;
+
+        while(start < end)
+        {
+            swapChar(start, end, chrInput);
+            start ++;
+            end--;
+        }
+        String strOutput = new String(chrInput);
+        return strOutput;
+    }
+
+    private static void swapChar(int start, int end,char[] chrInput)
+    {
+        char temp = chrInput[start];
+        chrInput[start] = chrInput[end];
+        chrInput[end] = temp;
+    }
+
+
 }
