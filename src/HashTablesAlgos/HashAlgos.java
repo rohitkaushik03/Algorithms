@@ -37,6 +37,7 @@ public class HashAlgos
 
     public static boolean checkPermutation(String str1, String str2)
     {
+        //Given two strings, write a method to decide if one is a permutation of the other.
 
         if (str1.toCharArray().length != str2.toCharArray().length)
             return false;
