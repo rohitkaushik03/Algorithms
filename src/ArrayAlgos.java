@@ -27,6 +27,7 @@ public class ArrayAlgos {
         //String output1 = ReverseString2("Hello World");
         //System.out.println(output1);
 
+        spiralPrinting(4,4,mat);
 
 
     }
@@ -151,5 +152,57 @@ public class ArrayAlgos {
         chrInput[end] = temp;
     }
 
+    public static void spiralPrinting(int tr, int tc, int arr[][])
+    {
+        /* Given a 2D array, print it in spiral form. See the following examples.
+
+        Input:
+        1    2   3   4
+        5    6   7   8
+        9   10  11  12
+        13  14  15  16
+        Output:
+        1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10 */
+
+        //we will take two pointers starting row(r) and ending row (er)
+        //and we will take two pointers for columns as well starting column(c) and ending column (ec)
+        int r=0,er=tr-1,c=0, ec = tc-1, i=0;
+
+        while (r < er && c < ec)
+        {
+            //print first row
+            for (i=c;i<=ec;i++)
+            {
+                System.out.println(arr[r][i]);
+            }
+            r++;
+
+            //print last column of each row
+            for (i=r;i<=er;i++)
+            {
+
+                System.out.println(arr[i][ec]);
+            }
+            ec--;
+
+            //print last row all columns in ascending order
+
+            for (i=ec;i>=c; i--)
+            {
+                System.out.println(arr[er][i]);
+            }
+            er--;
+
+            //print the first column for remaining rows
+            for (i=er;i>=r;i--)
+            {
+                System.out.println(arr[i][c]);
+            }
+            c++;
+
+        }
+
+
+    }
 
 }
