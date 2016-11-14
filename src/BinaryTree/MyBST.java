@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import LinkedList.Node;
+
 /**
  * Created by rkaushik on 11/10/16.
  */
@@ -35,5 +37,23 @@ public class MyBST
                 }
             }
         }
+    }
+
+    public boolean FindNode(int data)
+    {
+        BSTNode current = root;
+
+        while(current != null)
+        {
+            if (data == current.data) {
+                return true;
+            } else if (data > current.data) {
+                current = current.right;
+            } else if (data < current.data) {
+                current  =current.left;
+            }
+
+        }
+        return false;
     }
 }

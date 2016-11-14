@@ -12,5 +12,10 @@ public class BSTMain
         objBST.InsertNode(15);
         objBST.InsertNode(9);
         objBST.InsertNode(6);
+
+        System.out.println(objBST.FindNode(10));
+        System.out.println(objBST.FindNode(9));
+        System.out.println(objBST.FindNode(6));
+        System.out.println(objBST.FindNode(60));
     }
 }
