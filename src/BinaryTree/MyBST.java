@@ -2,6 +2,8 @@ package BinaryTree;
 
 import LinkedList.Node;
 
+import java.util.Stack;
+
 /**
  * Created by rkaushik on 11/10/16.
  */
@@ -55,5 +57,35 @@ public class MyBST
 
         }
         return false;
+    }
+
+    public void CallInOrderTraversal()
+    {
+        InOrderTraversal(root);
+    }
+
+    private void InOrderTraversal(BSTNode root)
+    {
+        //InOrder traversal means we have to traverse Left root Right
+        //without recursion, using stack, Time Complexity O(n), Space Complexity is also O(n)
+        if (root == null)
+            return;
+        Stack<BSTNode> stk = new Stack<BSTNode>();
+        while (true)
+        {
+            if (root != null)
+            {
+                stk.push(root);
+                root = root.left;
+            }
+            else
+            {
+                if (stk.isEmpty())
+                    break;
+                root = stk.pop();
+                System.out.println(root.data);
+                root = root.right;
+            }
+        }
     }
 }
