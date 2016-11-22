@@ -61,7 +61,12 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        System.out.println("---Inorder Traversal using stack---");
         InOrderTraversal(root);
+
+        System.out.println("---Morris traversal---");
+        MorrisTraversal(root);
+
     }
 
     private void InOrderTraversal(BSTNode root)
@@ -85,6 +90,45 @@ public class MyBST
                 root = stk.pop();
                 System.out.println(root.data);
                 root = root.right;
+            }
+        }
+    }
+
+    public void MorrisTraversal(BSTNode root)
+    {
+        BSTNode current = root;
+
+        while(current != null)
+        {
+
+            if (current.left == null)
+            {
+                System.out.println(current.data);
+                current = current.right;
+            }
+            else
+            {
+                //find predecessor
+                BSTNode predecessor = current.left;
+                //to find predecessor keep going right
+                while(predecessor.right != current && predecessor.right !=null)
+                {
+                    predecessor = predecessor.right;
+                }
+                //if right path is null then set the right link of predecessor to current
+                if (predecessor.right == null)
+                {
+                    predecessor.right = current;
+                    current = current.left;
+                }
+                else
+                { //that means we already visited left side now move to the right after visiting current
+                    predecessor.right = null;
+                    System.out.println(current.data);
+                    current = current.right;
+                }
+
+
             }
         }
     }
