@@ -27,7 +27,9 @@ public class ArrayAlgos {
         //String output1 = ReverseString2("Hello World");
         //System.out.println(output1);
 
-        spiralPrinting(4,4,mat);
+        //spiralPrinting(4,4,mat);
+
+     boolean result = isUniqueCharacter("america");
 
 
     }
@@ -201,5 +203,24 @@ public class ArrayAlgos {
             c++;
 
         }
+    }
+
+    public static boolean isUniqueCharacter(String str)
+    {
+        //Implement an algorithm to determine if a string has all unique characters. What if
+        //you cannot use additional data structures?
+        if (str.length() > 256)
+            return false;
+        boolean[] charset = new boolean[256];
+        for (int i=0;i<str.length();i++) {
+            int val = str.charAt(i);
+
+            if (charset[val])
+                //means character already exists
+                return false;
+            else
+                charset[val] = true;
+        }
+        return true;
     }
 }
