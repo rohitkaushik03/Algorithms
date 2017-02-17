@@ -71,7 +71,7 @@ public class MyBST
 
     private void InOrderTraversal(BSTNode root)
     {
-        //InOrder traversal means we have to traverse Left root Right
+        //InOrder traversal means we have to traverse Left - root - Right
         //without recursion, using stack, Time Complexity O(n), Space Complexity is also O(n)
         if (root == null)
             return;

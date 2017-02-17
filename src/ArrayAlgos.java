@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Stack;
 
 /**
  * Created by rkaushik on 10/4/16.
@@ -29,8 +30,9 @@ public class ArrayAlgos {
 
         //spiralPrinting(4,4,mat);
 
-     boolean result = isUniqueCharacter("america");
-
+     //boolean result = isUniqueCharacter("america");
+        int[] arr = {98,23,54,12,20,7,27};
+        NextGreatestElement(arr);
 
     }
 
@@ -205,10 +207,10 @@ public class ArrayAlgos {
         }
     }
 
+    //Implement an algorithm to determine if a string has all unique characters. What if
+    //you cannot use additional data structures?
     public static boolean isUniqueCharacter(String str)
     {
-        //Implement an algorithm to determine if a string has all unique characters. What if
-        //you cannot use additional data structures?
         if (str.length() > 256)
             return false;
         boolean[] charset = new boolean[256];
@@ -222,5 +224,25 @@ public class ArrayAlgos {
                 charset[val] = true;
         }
         return true;
+    }
+
+    //Given an array of integers(positive or negative), print the next greater element of all elements in the array.
+    // If there is no greater element then print null.
+    public static void NextGreatestElement(int[] arr)
+    {
+        Stack<Integer> stk = new Stack<Integer>();
+        for (int i=0;i < arr.length;i++)
+        {
+            while(!stk.empty() && arr[i] > stk.peek()) {
+
+                System.out.println("Next greater element of " + stk.pop() + " is " + arr[i]);
+            }
+            stk.push(arr[i]);
+        }
+
+        while(!stk.empty())
+        {
+        System.out.println("Next greater element of " + stk.pop() + " is null");
+        }
     }
 }
