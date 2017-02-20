@@ -28,11 +28,11 @@
       <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78984237" vertical-offset="359" max-vertical-offset="1005">
-              <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.64835167" vertical-offset="849" max-vertical-offset="1395">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#178#219#0" expanded="false" />
+                <element signature="e#198#239#0" expanded="false" />
                 <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
@@ -41,7 +41,7 @@
                 <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-                <element signature="e#5910#5919#0" expanded="true" />
+                <element signature="e#6004#6013#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,10 +84,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="196" />
-    <option name="y" value="75" />
-    <option name="width" value="1568" />
-    <option name="height" value="979" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -552,32 +551,52 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="75" width="1568" height="979" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2660654" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32468995" sideWeight="0.50262123" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2650448" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2650448" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32616487" sideWeight="0.49920508" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20380078" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32468995" sideWeight="0.49672347" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22246066" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24839948" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -629,12 +648,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>41</line>
+          <line>46</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>63</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -664,31 +683,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>131</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>137</line>
+          <line>142</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>147</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>206</line>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>193</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -760,7 +779,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>213</line>
+          <line>218</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
@@ -778,12 +797,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>33</line>
+          <line>257</line>
           <properties />
-          <option name="timeStamp" value="60" />
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -856,7 +875,7 @@
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#178#219#0" expanded="false" />
+            <element signature="e#198#239#0" expanded="false" />
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
@@ -865,7 +884,7 @@
             <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#5910#5919#0" expanded="true" />
+            <element signature="e#6004#6013#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1007,7 +1026,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#178#219#0" expanded="false" />
+            <element signature="e#198#239#0" expanded="false" />
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
@@ -1016,7 +1035,7 @@
             <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#5910#5919#0" expanded="true" />
+            <element signature="e#6004#6013#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1034,7 +1053,7 @@
           <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#178#219#0" expanded="false" />
+            <element signature="e#198#239#0" expanded="false" />
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
@@ -1043,7 +1062,7 @@
             <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#5910#5919#0" expanded="true" />
+            <element signature="e#6004#6013#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1241,11 +1260,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78984237" vertical-offset="359" max-vertical-offset="1005">
-          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.64835167" vertical-offset="849" max-vertical-offset="1395">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#178#219#0" expanded="false" />
+            <element signature="e#198#239#0" expanded="false" />
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
@@ -1254,7 +1273,7 @@
             <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#5910#5919#0" expanded="true" />
+            <element signature="e#6004#6013#0" expanded="true" />
           </folding>
         </state>
       </provider>

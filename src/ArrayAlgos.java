@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by rkaushik on 10/4/16.
@@ -30,9 +31,13 @@ public class ArrayAlgos {
 
         //spiralPrinting(4,4,mat);
 
-     //boolean result = isUniqueCharacter("america");
-        int[] arr = {98,23,54,12,20,7,27};
-        NextGreatestElement(arr);
+        //boolean result = isUniqueCharacter("america");
+
+        //int[] arr = {98,23,54,12,20,7,27};
+        //NextGreatestElement(arr);
+
+        int[] arr = {1,2,3,4,5};
+        leftRotateArray(arr,4);
 
     }
 
@@ -243,6 +248,27 @@ public class ArrayAlgos {
         while(!stk.empty())
         {
         System.out.println("Next greater element of " + stk.pop() + " is null");
+        }
+    }
+
+    //Given an array of  integers and a number,d , perform d  left rotations on the array.
+    // Then print the updated array as a single line of space-separated integers.
+    public static void leftRotateArray(int[] arr,int d)
+    {
+        for (int i=1;i<=d;i++)
+        {
+            int temp = arr[0];
+            int j;
+            for (j=0;j<arr.length -1;j++)
+            {
+                arr[j] = arr[j+1];
+            }
+            arr[j] = temp;
+        }
+
+        for (int p = 0;p < arr.length;p++)
+        {
+            System.out.print(arr[p] + " ");
         }
     }
 }
