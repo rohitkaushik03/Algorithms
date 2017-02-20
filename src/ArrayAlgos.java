@@ -36,8 +36,11 @@ public class ArrayAlgos {
         //int[] arr = {98,23,54,12,20,7,27};
         //NextGreatestElement(arr);
 
-        int[] arr = {1,2,3,4,5};
-        leftRotateArray(arr,4);
+        //int[] arr = {1,2,3,4,5};
+        //leftRotateArray(arr, 4);
+
+        int[] arr = {3,2,1,5,6,4};
+        kthLargestElement(arr,2);
 
     }
 
@@ -270,5 +273,26 @@ public class ArrayAlgos {
         {
             System.out.print(arr[p] + " ");
         }
+    }
+
+    //Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+    //For example, given [3,2,1,5,6,4] and k = 2, return 5.
+    public static int kthLargestElement(int[] arr,int k)
+    {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(k);
+
+        for(int i : arr)
+        {
+            //Inserts in Priority queue
+            pq.offer(i);
+
+            //if priority queue size is greater than k then remove one element
+            if (pq.size()>k)
+            {
+                pq.poll();
+            }
+        }
+        System.out.println(pq.peek());
+        return pq.peek();
     }
 }
