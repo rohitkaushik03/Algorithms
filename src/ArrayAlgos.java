@@ -40,7 +40,10 @@ public class ArrayAlgos {
         //leftRotateArray(arr, 4);
 
         int[] arr = {3,2,1,5,6,4};
-        kthLargestElement(arr,2);
+        //kthLargestElement(arr,2);
+
+        boolean result =  hasSumExists(arr, 10);
+        System.out.println(result);
 
     }
 
@@ -294,5 +297,29 @@ public class ArrayAlgos {
         }
         System.out.println(pq.peek());
         return pq.peek();
+    }
+
+    //Function should return true if the given sum exists in the array in the continuous sequence
+    //For e.g. if the sum is 9, {1,5,6,3,10,2}, it should return true as the elements in sequence is 6,3
+    public static boolean hasSumExists(int[] arr, int total)
+    {
+        int tempSum = 0,count=0;
+        for (int i=0;i<arr.length;i++)
+        {
+            if (arr[i] == total)
+                return true;
+
+            tempSum = tempSum + arr[i];
+            while (tempSum > total)
+            {
+                tempSum = tempSum - arr[count];
+                count++;
+            }
+            if (tempSum == total)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
