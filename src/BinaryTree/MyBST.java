@@ -1,8 +1,10 @@
 package BinaryTree;
 
 import LinkedList.Node;
+import com.sun.tools.javac.util.Pair;
 
-import java.util.Stack;
+import java.util.*;
+
 
 /**
  * Created by rkaushik on 11/10/16.
@@ -61,6 +63,9 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        System.out.println("---Print Tree In Vertical Order---");
+        PrintTreeInVerticalOrder(root);
+
         System.out.println("---Inorder Traversal using stack---");
         InOrderTraversal(root);
 
@@ -130,6 +135,63 @@ public class MyBST
 
 
             }
+        }
+    }
+
+    //Given a binary tree, print it in vertical order path.
+    public void PrintTreeInVerticalOrder(BSTNode root)
+    {
+        if (root == null)
+            return;
+
+        //ArrayList to store the Node elements
+        ArrayList<Integer> list;
+        //TreeMap to hold the Level and Node elements on that level
+        TreeMap<Integer,ArrayList<Integer>> map = new TreeMap<Integer, ArrayList<Integer>>();
+        Queue<Pair<BSTNode,Integer>> q = new LinkedList<Pair<BSTNode, Integer>>();
+
+        //keep track of horizontal distance from root.
+        int hd=0;
+        //add the root node to the queue
+        q.add(new Pair<BSTNode, Integer>(root,hd));
+
+        while (!q.isEmpty())
+        {
+            //pop the element from queue
+            Pair<BSTNode,Integer> temp = q.poll();
+            //fetch the horizontal distance from q
+            hd = temp.snd;
+            //fetch the node from q
+            BSTNode node = temp.fst;
+
+            if (!map.containsKey(hd))
+            {
+                list = new ArrayList<Integer>();
+            }
+            else
+            {
+                list = map.get(hd);
+            }
+
+            list.add(node.data);
+            map.put(hd,list);
+
+            //Move to the left node
+            if(node.left !=null)
+            {
+                q.add(new Pair<BSTNode, Integer>(node.left,hd-1));
+            }
+            if (node.right != null)
+            {
+                q.add(new Pair<BSTNode, Integer>(node.right,hd+1));
+            }
+        }
+
+        /// Traverse the map and print nodes at every horizontal distance (hd)
+        Set<Integer> set = map.keySet();
+        for(int key:set)
+        {
+            System.out.print(map.get(key));
         }
     }
 }
