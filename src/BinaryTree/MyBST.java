@@ -63,6 +63,9 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        System.out.println("---Invert Binary Tree---");
+        InvertBinaryTree(root);
+
         System.out.println("---Print Tree In Vertical Order---");
         PrintTreeInVerticalOrder(root);
 
@@ -192,6 +195,32 @@ public class MyBST
         for(int key:set)
         {
             System.out.print(map.get(key));
+        }
+    }
+
+    //Invert or mirror the binary tree
+    public void InvertBinaryTree(BSTNode root)
+    {
+        if (root == null)
+            return;
+
+        Queue<BSTNode> q = new LinkedList<BSTNode>();
+        q.add(root);
+
+        while (!q.isEmpty())
+        {
+            BSTNode node  = q.poll();
+
+            BSTNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+
+            if (node.left != null) {
+                q.add(node.left);
+            }
+            if(node.right != null) {
+                q.add(node.right);
+            }
         }
     }
 }
