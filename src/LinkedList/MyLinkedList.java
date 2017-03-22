@@ -127,4 +127,38 @@ public class MyLinkedList
         }
         head=previous;
     }
+
+    //You are given two linked lists representing two non-negative numbers.
+    // The digits are stored in reverse order and each of their nodes contain a single digit.
+    // Add the two numbers and return it as a linked list.
+    public MyLinkedList AddTwoNumbers(MyLinkedList list1,MyLinkedList list2)
+    {
+        Node n1 = list1.head;
+        Node n2 = list2.head;
+
+        MyLinkedList newlist = new MyLinkedList();
+        int carry=0;
+
+        while (n1 !=null)
+        {
+            int sum = n1.data + n2.data + carry;
+
+            if(sum >= 10)
+            {
+                carry=sum/10;
+                newlist.Add(sum%10);
+            }
+            else{
+                newlist.Add(sum);
+            }
+
+            //if (n1.next !=null)
+                n1 = n1.next;
+
+            //if(n2.next!=null)
+                n2 = n2.next;
+        }
+
+        return newlist;
+    }
 }

@@ -42,7 +42,9 @@ public class ArrayAlgos {
         int[] arr = {3,2,1,5,6,4};
         //kthLargestElement(arr,2);
 
-        boolean result =  hasSumExists(arr, 10);
+        //boolean result =  hasSumExists(arr, 10);
+
+        String result= getMaximumTime(1,8,3,2);
         System.out.println(result);
 
     }
@@ -321,5 +323,55 @@ public class ArrayAlgos {
             }
         }
         return false;
+    }
+
+    //Given four digits find the maximum valid time that can be displayed on a digital clock(24 hours format)
+    //using those digits.
+    public static String getMaximumTime(int A,int B,int C, int D)
+    {
+        int firstDigit=0;
+        int secondDigit=0;
+        int thirdDigit=0;
+        int fourDigit=0;
+
+        List<Integer> lst = new ArrayList<Integer>();
+        lst.add(A);
+        lst.add(B);
+        lst.add(C);
+        lst.add(D);
+
+        for(int i: lst)
+        {
+            if(i<=2 && i > firstDigit)
+            {
+                firstDigit=i;
+            }
+        }
+
+        lst.remove((Object)firstDigit);
+
+
+        for(int i: lst)
+        {
+            if(i<4 && i > secondDigit)
+            {
+                secondDigit=i;
+            }
+        }
+        lst.remove((Object)secondDigit);
+
+        for(int i: lst)
+        {
+            if(i <= 5 && i > thirdDigit)
+            {
+                thirdDigit=i;
+            }
+        }
+        lst.remove((Object)thirdDigit);
+
+        fourDigit = lst.get(0);
+
+        return "" + firstDigit + secondDigit + ":" + thirdDigit + fourDigit;
+
     }
 }

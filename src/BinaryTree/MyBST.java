@@ -63,6 +63,8 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        findChildBelowGivenLevel(root,1);
+
         System.out.println("---Invert Binary Tree---");
         InvertBinaryTree(root);
 
@@ -222,5 +224,23 @@ public class MyBST
                 q.add(node.right);
             }
         }
+    }
+
+    public int findChildBelowGivenLevel(BSTNode root, int level)
+    {
+        return findUtil(root,0,level,0);
+    }
+
+    public int findUtil(BSTNode root,int current,int level, int count)
+    {
+        if (root==null)
+            return 0;
+        if (current > level)
+            count++;
+
+        findUtil(root.left,current+1,level,count);
+        findUtil(root.right,current+1,level,count);
+
+        return count;
     }
 }
