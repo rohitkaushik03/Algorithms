@@ -63,6 +63,12 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        System.out.println("---Post order Traversal using stack---");
+        PostOrderTraversal(root);
+
+        System.out.println("---Inorder Traversal using stack---");
+        PreOrderTraversal(root);
+
         findChildBelowGivenLevel(root,1);
 
         System.out.println("---Invert Binary Tree---");
@@ -101,6 +107,63 @@ public class MyBST
                 System.out.println(root.data);
                 root = root.right;
             }
+        }
+    }
+
+    private void PreOrderTraversal(BSTNode root)
+    {
+        //PreOrder traversal means we have to traverse root - Left- Right
+        //without recursion, using stack, Time Complexity O(n), Space Complexity is also O(n)
+        if(root == null)
+            return;
+
+        Stack<BSTNode> stk = new Stack<BSTNode>();
+        stk.push(root);
+        while (true)
+        {
+            if (!stk.isEmpty()) {
+                root = stk.pop();
+                System.out.println(root.data + " -> ");
+                //We are pushing right child first, so it will be processed after left subtree as Stack is LIFO.
+                if (root.right != null)
+                    stk.push(root.right);
+
+                if (root.left != null)
+                    stk.push(root.left);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    private void PostOrderTraversal(BSTNode root)
+    {
+        //Post Order traversal - left - right - root
+        //We have to use two Stacks for Post order traversal
+        if (root == null)
+            return;
+        Stack<BSTNode> stk1 = new Stack<BSTNode>();
+        Stack<BSTNode> stk2 = new Stack<BSTNode>();
+        stk1.add(root);
+
+        while(!stk1.isEmpty())
+        {
+            root = stk1.pop();
+            stk2.push(root);
+
+            if(root.left !=null)
+                stk1.push(root.left);
+
+            if (root.right !=null)
+                stk1.push(root.right);
+        }
+
+        while (!stk2.isEmpty())
+        {
+            root = stk2.pop();
+            System.out.print(root.data + "->");
         }
     }
 

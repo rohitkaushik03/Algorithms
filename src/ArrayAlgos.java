@@ -39,14 +39,20 @@ public class ArrayAlgos {
         //int[] arr = {1,2,3,4,5};
         //leftRotateArray(arr, 4);
 
-        int[] arr = {3,2,1,5,6,4};
+        //int[] arr = {3,2,1,5,6,4};
         //kthLargestElement(arr,2);
 
         //boolean result =  hasSumExists(arr, 10);
 
-        String result= getMaximumTime(1,8,3,2);
-        System.out.println(result);
+        //String result= getMaximumTime(1,8,3,2);
+        //System.out.println(result);
 
+        //int[] arr  =  {1,5,6,9,28,30};
+        //finMinTicketsCost(arr);
+
+        int[] arr = {6, 2, 18};
+        int result = CountNumbers(arr);
+        System.out.println(result);
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -373,5 +379,58 @@ public class ArrayAlgos {
 
         return "" + firstDigit + secondDigit + ":" + thirdDigit + fourDigit;
 
+    }
+
+    public static int finMinTicketsCost(int[] a)
+    {
+        boolean[] dayTrip = new boolean[31]; // note: initializes to false
+        for (final int day : a) {
+            dayTrip[day] = true;
+        }
+        int[] minCostDP = new int[31];
+        minCostDP[0] = 0; // technically redundant
+        for (int d = 1; d <= 30; d++)
+        {
+            if (! dayTrip[d]) {
+                minCostDP[d] = minCostDP[d-1];
+                continue;
+            }
+            int minCost;
+            // Possibility #1: one-day pass on day d:
+            minCost = minCostDP[d-1] + 2;
+            // Possibility #2: seven-day pass ending on or after day d:
+            for (int prevD = Math.max(0, d - 7); prevD <= d - 4; ++prevD)
+            {
+                minCost = Math.min(minCost, minCostDP[prevD] + 7);
+            }
+            // Possibility #3: 30-day pass for the whole period:
+            minCost = Math.min(minCost, 25);
+
+            minCostDP[d] = minCost;
+        }
+        return minCostDP[30];
+    }
+
+    public static int CountNumbers(int[] arr)
+    {
+        int div;
+        List<Integer> lst = new ArrayList<Integer>();
+        for(int num:arr)
+            lst.add(num);
+
+        for(int i=0;i<lst.size();i++)
+        {
+            for(int j=i+1;j<lst.size();j++)
+            {
+                if(lst.get(i)>lst.get(j))
+                    div=lst.get(i)/lst.get(j);
+                else
+                    div = lst.get(j)/lst.get(i);
+
+                if(!lst.contains(div))
+                    lst.add(div);
+            }
+        }
+        return lst.size();
     }
 }
