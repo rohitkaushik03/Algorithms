@@ -2,6 +2,7 @@ package BinaryTree;
 
 import LinkedList.Node;
 import com.sun.tools.javac.util.Pair;
+import sun.tools.tree.WhileStatement;
 
 import java.util.*;
 
@@ -63,6 +64,9 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        System.out.println("---BFS order Traversal using Queue---");
+        BFSTraversal(root);
+
         System.out.println("---Post order Traversal using stack---");
         PostOrderTraversal(root);
 
@@ -206,6 +210,30 @@ public class MyBST
         }
     }
 
+    //Breadth First Traversal
+    public void BFSTraversal(BSTNode root)
+    {
+        if (root == null)
+            return;
+        Queue<BSTNode> q = new LinkedList<BSTNode>();
+        q.add(root);
+        while(true) {
+            if (!q.isEmpty()) {
+                root = q.poll();
+
+                System.out.print(root.data + " -> ");
+
+                if (root.left != null)
+                    q.add(root.left);
+
+                if (root.right !=null)
+                    q.add(root.right);
+            } else {
+                return;
+            }
+        }
+    }
+
     //Given a binary tree, print it in vertical order path.
     public void PrintTreeInVerticalOrder(BSTNode root)
     {
@@ -305,5 +333,10 @@ public class MyBST
         findUtil(root.right,current+1,level,count);
 
         return count;
+    }
+
+    private void PrintBoundaries(BSTNode root)
+    {
+
     }
 }

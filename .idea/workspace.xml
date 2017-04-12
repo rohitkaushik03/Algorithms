@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6551fe3a-7adb-4ddd-ac8d-5dfe825715b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FirstProject/ArrayAlgos.class" afterPath="$PROJECT_DIR$/out/production/FirstProject/ArrayAlgos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayAlgos.java" afterPath="$PROJECT_DIR$/src/ArrayAlgos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree/MyBST.java" afterPath="$PROJECT_DIR$/src/BinaryTree/MyBST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +30,7 @@
       <file leaf-file-name="BSTMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
@@ -43,21 +40,24 @@
       <file leaf-file-name="MyBST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/MyBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60119045" vertical-offset="1182" max-vertical-offset="1995">
-              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.49331352" vertical-offset="1367" max-vertical-offset="3585">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#InsertNode#0;class#MyBST#0" expanded="false" />
-                <element signature="method#FindNode#0;class#MyBST#0" expanded="false" />
+                <element signature="method#InOrderTraversal#0;class#MyBST#0" expanded="false" />
+                <element signature="e#2478#2487#0" expanded="true" />
                 <element signature="method#PreOrderTraversal#0;class#MyBST#0" expanded="false" />
-                <element signature="e#3057#3066#0" expanded="true" />
-                <element signature="e#3879#3888#0" expanded="true" />
-                <element signature="e#3931#3940#0" expanded="true" />
+                <element signature="e#3193#3202#0" expanded="true" />
+                <element signature="method#PostOrderTraversal#0;class#MyBST#0" expanded="false" />
+                <element signature="e#4015#4024#0" expanded="true" />
+                <element signature="e#4067#4076#0" expanded="true" />
                 <element signature="method#MorrisTraversal#0;class#MyBST#0" expanded="false" />
-                <element signature="method#PrintTreeInVerticalOrder#0;class#MyBST#0" expanded="false" />
-                <element signature="e#5957#5986#0" expanded="true" />
-                <element signature="e#6045#6069#0" expanded="true" />
-                <element signature="method#InvertBinaryTree#0;class#MyBST#0" expanded="false" />
+                <element signature="e#5882#5891#0" expanded="true" />
+                <element signature="e#6668#6697#0" expanded="true" />
+                <element signature="e#6756#6780#0" expanded="true" />
+                <element signature="e#8199#8208#0" expanded="true" />
+                <element signature="e#8675#8676#0" expanded="true" />
+                <element signature="e#8722#8723#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,7 +128,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="873" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -644,8 +644,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="873" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="1042" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -654,7 +654,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31882203" sideWeight="0.74023306" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26210526" sideWeight="0.74023306" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42637363" sideWeight="0.25976697" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -791,7 +791,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>47</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
@@ -893,21 +893,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>211</line>
+          <line>239</line>
           <properties />
           <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java</url>
@@ -923,15 +911,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>298</line>
+          <line>326</line>
           <properties />
           <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
@@ -965,30 +947,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>119</line>
+          <line>123</line>
           <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/MyBST.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="87" />
+      <option name="time" value="89" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1455,8 +1419,8 @@
         <state vertical-scroll-proportion="0.38690478" vertical-offset="0" max-vertical-offset="504">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1471,21 +1435,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/MyBST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60119045" vertical-offset="1182" max-vertical-offset="1995">
-          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.49331352" vertical-offset="1367" max-vertical-offset="3585">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#InsertNode#0;class#MyBST#0" expanded="false" />
-            <element signature="method#FindNode#0;class#MyBST#0" expanded="false" />
+            <element signature="method#InOrderTraversal#0;class#MyBST#0" expanded="false" />
+            <element signature="e#2478#2487#0" expanded="true" />
             <element signature="method#PreOrderTraversal#0;class#MyBST#0" expanded="false" />
-            <element signature="e#3057#3066#0" expanded="true" />
-            <element signature="e#3879#3888#0" expanded="true" />
-            <element signature="e#3931#3940#0" expanded="true" />
+            <element signature="e#3193#3202#0" expanded="true" />
+            <element signature="method#PostOrderTraversal#0;class#MyBST#0" expanded="false" />
+            <element signature="e#4015#4024#0" expanded="true" />
+            <element signature="e#4067#4076#0" expanded="true" />
             <element signature="method#MorrisTraversal#0;class#MyBST#0" expanded="false" />
-            <element signature="method#PrintTreeInVerticalOrder#0;class#MyBST#0" expanded="false" />
-            <element signature="e#5957#5986#0" expanded="true" />
-            <element signature="e#6045#6069#0" expanded="true" />
-            <element signature="method#InvertBinaryTree#0;class#MyBST#0" expanded="false" />
+            <element signature="e#5882#5891#0" expanded="true" />
+            <element signature="e#6668#6697#0" expanded="true" />
+            <element signature="e#6756#6780#0" expanded="true" />
+            <element signature="e#8199#8208#0" expanded="true" />
+            <element signature="e#8675#8676#0" expanded="true" />
+            <element signature="e#8722#8723#0" expanded="true" />
           </folding>
         </state>
       </provider>
