@@ -48,10 +48,21 @@ public class ArrayAlgos {
         //System.out.println(result);
 
         //int[] arr  =  {1,5,6,9,28,30};
+        //int[] arr = {1,3,5,8,9,10};
         //finMinTicketsCost(arr);
 
-        int[] arr = {6, 2, 18};
-        int result = CountNumbers(arr);
+       // int[] arr = {6, 2, 18};
+       // int result = CountNumbers(arr);
+       // System.out.println(result);
+
+        //int[] arr={1,2,5,3};
+        //int[] arr = {2,3,0,5};
+        //MultiplicationElement(arr);
+
+        //int[] arr = {0, 2, 1, 0, 1, 2};
+        //int[] result =  dutchFlagProblem(arr);
+
+        String result = LookAndSayNumbers(4);
         System.out.println(result);
     }
 
@@ -286,7 +297,8 @@ public class ArrayAlgos {
         }
     }
 
-    //Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+    //Find the kth largest element in an unsorted array.
+    // Note that it is the kth largest element in the sorted order, not the kth distinct element.
     //For example, given [3,2,1,5,6,4] and k = 2, return 5.
     public static int kthLargestElement(int[] arr,int k)
     {
@@ -432,5 +444,117 @@ public class ArrayAlgos {
             }
         }
         return lst.size();
+    }
+
+
+    public static int[] MultiplicationElement(int[] arr)
+    {
+        //{2,3,5,0}
+        //result would be {0,0,0,30}
+        int totalMultiple = 1;
+        int tmWithZero = 0;
+        boolean isZeroExists=false;
+        int[] result = new int[arr.length];
+
+        for (int i=0;i< arr.length;i++)
+        {
+            if (arr[i] !=0)
+            {
+                totalMultiple = totalMultiple * arr[i];
+            }
+            else
+            {
+                isZeroExists=true;
+            }
+        }
+
+        for (int i=0;i<arr.length;i++)
+        {
+            if (isZeroExists)
+            {
+                if (arr[i]!=0)
+                {
+                    result[i] =0;
+                }
+                else
+                {
+                   result[i] = totalMultiple;
+                }
+            }
+            else
+            {
+                result[i] = totalMultiple/arr[i];
+            }
+
+        }
+        return result;
+    }
+
+    public static int[] dutchFlagProblem(int[] arr)
+    {
+        //Given an array A[] consisting 0s, 1s and 2s, write a function that sorts A[].
+        //The functions should put all 0s first, then all 1s and all 2s in last.
+        int low=0;
+        int high=2;
+        int lowerIndex=0;
+        int upperIndex=arr.length-1;
+        int currentIndex = 0;
+        int temp=0;
+
+        while (currentIndex <= upperIndex)
+        {
+            if (arr[currentIndex] == low)
+            {
+                temp = arr[currentIndex];
+                arr[currentIndex]=arr[lowerIndex];
+                arr[lowerIndex] = temp;
+                currentIndex++;
+                lowerIndex++;
+            }
+            else if (arr[currentIndex] == high)
+            {
+                temp = arr[currentIndex];
+                arr[currentIndex] = arr[upperIndex];
+                arr[upperIndex] = temp;
+                upperIndex--;
+            }
+            else
+            {
+                currentIndex++;
+            }
+        }
+
+        return arr;
+    }
+
+    public static String LookAndSayNumbers(int n)
+    {
+        //1,11,21,1211
+        String result="11";
+        int i=1;
+        while (i<n)
+        {
+            StringBuilder sb = new StringBuilder();
+            int count =1;
+            for (int j=1;j<result.length();j++)
+            {
+                 if (result.charAt(j)==result.charAt(j-1))
+                 {
+                     count++;
+                 }
+                 else
+                 {
+                  sb.append(count);
+                     sb.append(result.charAt(j-1));
+                 }
+            }
+
+            sb.append(count);
+            sb.append(result.charAt(result.length()-1));
+            i++;
+            result = sb.toString();
+        }
+
+        return result;
     }
 }

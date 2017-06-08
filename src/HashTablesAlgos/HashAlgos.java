@@ -1,5 +1,6 @@
 package HashTablesAlgos;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 
@@ -78,6 +79,37 @@ public class HashAlgos
         }
         return true;
 
+    }
+
+    public static int cooldownProblem(int[] arr , int cooldownTime)
+    {
+
+        //Input array  = {1,2,1,3} and cool down time = 2
+        //So there should be a cool down time between two same task
+        //{1,2,"",1,3} output is 5
+
+        HashMap<Integer,Integer> map = new HashMap<Integer, Integer>();
+        int total=0;
+
+        for (int i=0;i<arr.length;i++)
+        {
+            if (map.containsKey(arr[i]))
+            {
+                int expected=map.get(arr[i]) + cooldownTime + 1;
+
+                if (expected > total)
+                {
+                 total = expected;
+                }
+                else
+                    total ++;
+            }
+            else
+                total++;
+
+            map.put(arr[i],total);
+        }
+        return total;
     }
 
 }

@@ -338,5 +338,14 @@ public class MyBST
     private void PrintBoundaries(BSTNode root)
     {
 
+        if (root == null)
+            return;
+        int level=0;
+        //we store the level and List of Nodes on that level
+        TreeMap<Integer,ArrayList<Integer>> map = new TreeMap<Integer, ArrayList<Integer>>();
+        //Queue to keep track of level and Node
+        Queue<Pair<BSTNode,Integer>> q = new LinkedList<Pair<BSTNode, Integer>>();
+        q.add(new Pair<BSTNode, Integer>(root,level));
+
     }
 }
