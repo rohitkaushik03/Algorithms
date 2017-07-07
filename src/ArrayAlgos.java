@@ -1,6 +1,6 @@
 import java.util.HashSet;
-import java.util.Stack;
-import java.util.*;
+        import java.util.Stack;
+        import java.util.*;
 
 /**
  * Created by rkaushik on 10/4/16.
@@ -10,17 +10,17 @@ public class ArrayAlgos {
     public static void main(String args[])
     {
 
-       //calling get getMajorityElement function
+        //calling get getMajorityElement function
 //       int[] arr = { 2, 6, 2, 2, 6, 2, 2, 8, 2, 1 };
 //       int majority = getMajorityElement(arr);
 //       System.out.println("Majority element is : " + majority);
 
         //calling get stairSearch function
         int[][] mat =  {   { 2, 6, 7, 11},
-                           { 3, 8, 10, 12},
-                           { 4, 9, 11, 13},
-                           { 5, 15, 16, 18}
-                       };
+                { 3, 8, 10, 12},
+                { 4, 9, 11, 13},
+                { 5, 15, 16, 18}
+        };
 
         //System.out.println(stairSearch(mat, 4, 16));
         //String output = ReverseString("I am the best");
@@ -51,9 +51,9 @@ public class ArrayAlgos {
         //int[] arr = {1,3,5,8,9,10};
         //finMinTicketsCost(arr);
 
-       // int[] arr = {6, 2, 18};
-       // int result = CountNumbers(arr);
-       // System.out.println(result);
+        // int[] arr = {6, 2, 18};
+        // int result = CountNumbers(arr);
+        // System.out.println(result);
 
         //int[] arr={1,2,5,3};
         //int[] arr = {2,3,0,5};
@@ -62,7 +62,26 @@ public class ArrayAlgos {
         //int[] arr = {0, 2, 1, 0, 1, 2};
         //int[] result =  dutchFlagProblem(arr);
 
-        String result = LookAndSayNumbers(4);
+        //String result = LookAndSayNumbers(4);
+        //System.out.println(result);
+
+        //int[] height = {2,1,5,6,2,3};
+        //largestRectangleArea(height);
+
+        //int[] arr = {1,2,3,3,3,3,4,5,5,6,7};
+        //number25PercentTimes(arr);
+
+        //multiple(20);
+        //int[] arr = {2,3,6,7};
+        //combinationSum(arr,7);
+
+        //int[] arr = {-2,3,2,-1};
+        //int[] arr = {-2,-3,4,-1,-2,1,5,-3};
+        //maximumSumSubArray(arr);
+
+        //int[] arr = {1, 4, 45, 6, 0, 19};
+        int[] arr = {1, 10, 5, 2, 7};
+        int result = smallestSubWithSum(arr,9);
         System.out.println(result);
     }
 
@@ -130,18 +149,18 @@ public class ArrayAlgos {
 
         while (r < n && c >= 0)
         {
-             if (item < matrix[r][c])
-             {
-                 c--;
-             }
-             else if(item > matrix[r][c])
-             {
-                 r++;
-             }
-             else
-             {
-              return true;
-             }
+            if (item < matrix[r][c])
+            {
+                c--;
+            }
+            else if(item > matrix[r][c])
+            {
+                r++;
+            }
+            else
+            {
+                return true;
+            }
 
         }
         return false;
@@ -272,7 +291,7 @@ public class ArrayAlgos {
 
         while(!stk.empty())
         {
-        System.out.println("Next greater element of " + stk.pop() + " is null");
+            System.out.println("Next greater element of " + stk.pop() + " is null");
         }
     }
 
@@ -478,7 +497,7 @@ public class ArrayAlgos {
                 }
                 else
                 {
-                   result[i] = totalMultiple;
+                    result[i] = totalMultiple;
                 }
             }
             else
@@ -527,9 +546,10 @@ public class ArrayAlgos {
         return arr;
     }
 
+    //The count-and-say sequence is the sequence of integers beginning as follows:
+    //1, 11, 21, 1211, 111221, ...
     public static String LookAndSayNumbers(int n)
     {
-        //1,11,21,1211
         String result="11";
         int i=1;
         while (i<n)
@@ -538,15 +558,15 @@ public class ArrayAlgos {
             int count =1;
             for (int j=1;j<result.length();j++)
             {
-                 if (result.charAt(j)==result.charAt(j-1))
-                 {
-                     count++;
-                 }
-                 else
-                 {
-                  sb.append(count);
-                     sb.append(result.charAt(j-1));
-                 }
+                if (result.charAt(j)==result.charAt(j-1))
+                {
+                    count++;
+                }
+                else
+                {
+                    sb.append(count);
+                    sb.append(result.charAt(j-1));
+                }
             }
 
             sb.append(count);
@@ -557,4 +577,190 @@ public class ArrayAlgos {
 
         return result;
     }
+
+    public static int largestRectangleArea(int[] height)
+    {
+        if (height == null || height.length == 0) {
+            return 0;
+        }
+
+        Stack<Integer> stack = new Stack<Integer>();
+
+        int max = 0;
+        int i = 0;
+
+        while (i < height.length) {
+            //push index to stack when the current height is larger than the previous one
+            if (stack.isEmpty() || height[i] >= height[stack.peek()]) {
+                stack.push(i);
+                i++;
+            } else {
+                //calculate max value when the current height is less than the previous one
+                int p = stack.pop();
+                int h = height[p];
+                int w = stack.isEmpty() ? i : i - stack.peek() - 1;
+                max = Math.max(h * w, max);
+            }
+
+        }
+
+        while (!stack.isEmpty()) {
+            int p = stack.pop();
+            int h = height[p];
+            int w = stack.isEmpty() ? i : i - stack.peek() - 1;
+            max = Math.max(h * w, max);
+        }
+
+        return max;
+    }
+
+    //find an element in an array which is repeating more than or equal to 25% of the time.
+    public static int number25PercentTimes(int[] arr)
+    {
+
+        //1,2,3,4,5,5,6,7
+
+        int limit = arr.length/4;
+        int count=1;
+        int temp= arr[0];
+        int max = 0;
+        int major_element = arr[0];
+        for (int i=1;i<arr.length;i++)
+        {
+            if (arr[i]==arr[i-1])
+            {
+                count++;
+                temp = arr[i];
+            }
+            else
+            {
+                count = 1;
+                if (count > max)
+                {
+                    max = count;
+                    major_element = temp;
+                }
+            }
+        }
+
+        if (max >= limit)
+            return major_element;
+        else
+            return 0;
+    }
+
+    public static void multiple(int number)
+    {
+        for (int i=1;i < number/3;i++)
+        {
+            if (number % i == 0)
+            {
+                int result = number/i;
+                System.out.println(i + " * " + result);
+
+                if (result % 2==0 && result != number)
+                {
+                    System.out.println(i + " * " + result/2 + " * 2");
+                }
+            }
+        }
+    }
+
+
+    public static ArrayList<ArrayList<Integer>> combinationSum(int[] candidates, int target)
+    {
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+
+        if(candidates == null || candidates.length == 0) return result;
+
+        ArrayList<Integer> current = new ArrayList<Integer>();
+        Arrays.sort(candidates);
+
+        combinationSum(candidates, target, 0, current, result);
+
+        return result;
+    }
+
+    public static void combinationSum(int[] candidates, int target, int j, ArrayList<Integer> curr, ArrayList<ArrayList<Integer>> result)
+    {
+        if(target == 0)
+        {
+            ArrayList<Integer> temp = new ArrayList<Integer>(curr);
+            result.add(temp);
+            return;
+        }
+
+        for(int i=j; i<candidates.length; i++)
+        {
+            if(target < candidates[i])
+                return;
+
+            curr.add(candidates[i]);
+            combinationSum(candidates, target - candidates[i], i, curr, result);
+            curr.remove(curr.size()-1);
+        }
+    }
+
+
+    public static int maximumSumSubArray(int[] arr)
+    {
+        //maximum sum subarray
+        //Input : [-2,3,2,-1]
+        //Output: 5 from elements {3,2}
+        int maxCurrentSum = arr[0];
+        int maxGlobalSum = arr[0];
+
+        for (int i=1;i<arr.length;i++)
+        {
+            maxCurrentSum = Math.max(arr[i],maxCurrentSum + arr[i]);
+
+            if (maxCurrentSum > maxGlobalSum)
+                maxGlobalSum = maxCurrentSum;
+        }
+        return maxGlobalSum;
+    }
+
+    public static int smallestSubWithSum(int[] arr, int x)
+    {
+        /*
+        Given an array of integers and a number x, find the smallest subarray with sum greater than the given value
+        Examples:
+        arr[] = {1, 4, 45, 6, 0, 19}
+        x  =  51
+        Output: 3
+        Minimum length subarray is {4, 45, 6}
+
+        arr[] = {1, 10, 5, 2, 7}
+        x  = 9
+        Output: 1
+        Minimum length subarray is {10}
+        */
+
+        int sum =0;
+        int output = 0;
+        int start = 0;
+        for (int i=0;i<arr.length;i++)
+        {
+            if(arr[i] > x)
+            {
+                output = 1;
+                return output;
+            }
+            sum = sum + arr[i];
+            output++;
+            if (sum > x)
+            {
+                while(sum > x)
+                {
+                    sum = sum - arr[start];
+                    output--;
+                    start++;
+                }
+            }
+        }
+
+        return output;
+    }
+
+
 }
