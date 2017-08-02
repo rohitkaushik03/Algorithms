@@ -80,9 +80,18 @@ public class ArrayAlgos {
         //maximumSumSubArray(arr);
 
         //int[] arr = {1, 4, 45, 6, 0, 19};
-        int[] arr = {1, 10, 5, 2, 7};
-        int result = smallestSubWithSum(arr,9);
-        System.out.println(result);
+        //int[] arr = {1, 10, 5, 2, 7};
+        //int result = smallestSubWithSum(arr,9);
+        //System.out.println(result);
+
+        int[][] input =  {
+                { 0, 1, 1, 0},
+                { 1, 1, 1, 1},
+                { 1, 1, 1, 1},
+                { 1, 1, 0, 0}
+        };
+
+        MaxRectangleAreaOf1s(input);
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -762,5 +771,51 @@ public class ArrayAlgos {
         return output;
     }
 
+
+    public static int MaxRectangleAreaOf1s(int[][] inputArr)
+    {
+        //Given a 2D matrix of 0s and 1s. Find largest rectangle of all 1s in this matrix.
+    /*Input :   0 1 1 0
+                1 1 1 1
+                1 1 1 1
+                1 1 0 0
+
+    Output :  1 1 1 1
+              1 1 1 1 */
+
+    /*Maintain a temp array of same size as number of columns.
+    * Copy first row to this temp array and find largest rectangular area
+    * for histogram. Then keep adding elements of next row to this temp
+    * array if they are not zero. If they are zero then put zero there.
+            * Every time calculate max area in histogram.
+    *
+            * Time complexity - O(rows*cols)
+    * Space complexity - O(cols) - if number of cols is way higher than rows
+    * then do this process for rows and not columns.*/
+
+         int nosOfRows = inputArr.length;
+        int nosOfCols = inputArr[0].length;
+        int area = 0;
+        int maxArea = 0;
+        int[] temp = new int[nosOfCols];
+
+        for (int r = 0;r< nosOfRows;r++)
+        {
+          for(int c=0; c< nosOfCols; c++)
+          {
+            if (inputArr[r][c]==0)
+                temp[c] = 0;
+              else
+                temp[c]= temp[c] + inputArr[r][c];
+          }
+
+           area =  largestRectangleArea(temp);
+
+            if (area > maxArea)
+                maxArea = area;
+
+        }
+        return  maxArea;
+    }
 
 }
