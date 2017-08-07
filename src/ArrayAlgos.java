@@ -84,14 +84,19 @@ public class ArrayAlgos {
         //int result = smallestSubWithSum(arr,9);
         //System.out.println(result);
 
-        int[][] input =  {
+        /*int[][] input =  {
                 { 0, 1, 1, 0},
                 { 1, 1, 1, 1},
                 { 1, 1, 1, 1},
                 { 1, 1, 0, 0}
         };
 
-        MaxRectangleAreaOf1s(input);
+        MaxRectangleAreaOf1s(input);*/
+
+        //int[] arr = {0,1,0,3,12};
+        //MoveZeroes(arr);
+
+        computeSum(15);
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -818,4 +823,69 @@ public class ArrayAlgos {
         return  maxArea;
     }
 
+    public static void MoveZeroes(int[] arr)
+    {
+        /*Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+        For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].*/
+
+        int i=0;
+        int j=0;
+
+        while(j < arr.length)
+        {
+            if(arr[j]==0)
+            {
+                j++;
+            }
+            else
+            {
+                arr[i]=arr[j];
+                j++;
+                i++;
+            }
+        }
+
+        while (i<=arr.length)
+        {
+            arr[i]=0;
+            i++;
+        }
+
+    }
+
+    public static void computeSum(int num)
+    {
+        //Print all possible sums of consecutive numbers with sum N
+        //For e.g. Give N=15
+        //output should be
+        // 1+2+3+4+5
+        //4+5+6
+        //7+8
+        int start=1,end=1,sum=1;
+
+        while(start <= num/2)
+        {
+            if(sum<num)
+            {
+                end++;
+                sum = sum+end;
+
+            }
+            else if(sum>num)
+            {
+                sum = sum-start;
+                start++;
+            }
+            else if(sum==num)
+            {
+                for(int i=start;i<=end;i++)
+                {
+                    System.out.print(i + " + ");
+                }
+                System.out.println();
+                sum = sum-start;
+                start++;
+            }
+        }
+    }
 }
