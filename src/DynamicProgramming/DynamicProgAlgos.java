@@ -9,13 +9,13 @@ public class DynamicProgAlgos {
     public static void main(String[] args)
     {
         int  mat[][] = { {1, 2, 9},
-                {5, 3, 8},
-                {4, 6, 7} };
+                         {5, 3, 8},
+                         {4, 6, 7} };
         System.out.println("Length of the longest path is " +
                 finLongestOverAll(mat));
     }
 
-    // Function that returns length of the longest path
+    // Function that returns longest increasing sequence in 2d array
     // beginning with mat[i][j]
     // This function mainly uses lookup table dp[n][n]
     public static int findLongestFromACell(int i, int j, int mat[][], int dp[][])

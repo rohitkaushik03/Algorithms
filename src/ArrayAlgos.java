@@ -96,7 +96,12 @@ public class ArrayAlgos {
         //int[] arr = {0,1,0,3,12};
         //MoveZeroes(arr);
 
-        computeSum(15);
+        //computeSum(15);
+
+        String wordInput = "Hi How are you. Today payment very successfully i was able to do very payment successfully . Thank you.";
+        String wordMatch = "payment very successfully";
+        int result= SearchPattern(wordInput, wordMatch);
+        System.out.println(result);
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -888,4 +893,85 @@ public class ArrayAlgos {
             }
         }
     }
+
+    // Problem Statement:
+// Input Data: Hi How are you. Today i was able to do payment very successfully. Thank you. - TRUE
+// Input Data: Hi How are you. Today i was able to do very payment successfully. Thank you. - TRUE
+// Input Data: Hi How are you. Today i was able to do successfully payment very. Thank you. - TRUE
+// Input Data: Hi How are you. Today i was payment able to do very successfully. Thank you. - FALSE
+
+    // Match Data: payment very successfully
+    public static int SearchPattern(String input, String match)
+    {
+        Map<String, Integer> pattern = new HashMap<String, Integer>();
+
+        String[] patternArray = match.split(" ");
+
+        int tokencount = 0;
+        for(int i=0; i < patternArray.length; i++)
+        {
+            String token = patternArray[i];
+            if(!pattern.containsKey(token))
+            {
+                pattern.put(token, 1);
+            }
+            else
+            {
+                pattern.put(token, pattern.get(token) + 1);
+            }
+            tokencount++;
+        }
+
+        String[] inputArray = input.split(" ");
+
+        //loop through all the words
+        //check if the word exists in the hashmap
+
+        Map<String, Integer> temppattern = new HashMap<String, Integer>();
+        DeepCopyMap(pattern, temppattern);
+
+        int tempTokenCount = tokencount;
+
+        int patterncount = 0;
+        for(int i=0; i < inputArray.length; i++)
+        {
+            String token = inputArray[i];
+
+            if(pattern.containsKey(token))
+            {
+                while(pattern.containsKey(token))
+                {
+                    int count = pattern.get(token);
+                    if (count > 0)
+                    {
+                        pattern.put(token, count-1);
+                        tokencount--;
+                    }
+                    else
+                        break;
+
+                    i++;
+                    token = inputArray[i];
+                }
+
+                if(tokencount ==0)
+                    patterncount++;
+
+                pattern.clear();
+                DeepCopyMap(temppattern, pattern);
+                tokencount = tempTokenCount;
+            }
+
+        }
+        return patterncount;
+
+    }
+
+    private static void DeepCopyMap(Map<String, Integer> a, Map<String, Integer> b)
+    {
+        b.clear();
+        for(Map.Entry<String, Integer> entry : a.entrySet())
+            b.put(entry.getKey(), entry.getValue());
+    }
 }
+
