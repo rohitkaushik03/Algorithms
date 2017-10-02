@@ -62,8 +62,8 @@ public class ArrayAlgos {
         //int[] arr = {0, 2, 1, 0, 1, 2};
         //int[] result =  dutchFlagProblem(arr);
 
-        //String result = LookAndSayNumbers(4);
-        //System.out.println(result);
+        String result = LookAndSayNumbers(4);
+        System.out.println(result);
 
         //int[] height = {2,1,5,6,2,3};
         //largestRectangleArea(height);
@@ -100,8 +100,8 @@ public class ArrayAlgos {
 
         String wordInput = "Hi How are you. Today payment very successfully i was able to do very payment successfully . Thank you.";
         String wordMatch = "payment very successfully";
-        int result= SearchPattern(wordInput, wordMatch);
-        System.out.println(result);
+      //  int result= SearchPattern(wordInput, wordMatch);
+       // System.out.println(result);
     }
 
     public static Integer getMajorityElement(int[] arr)

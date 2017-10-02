@@ -1,3 +1,5 @@
+import com.sun.tools.doclets.internal.toolkit.util.DirectoryManager;
+
 /**
  * Created by rkaushik on 6/30/17.
  */
@@ -5,7 +7,8 @@ public class RecursionProblems {
 
     public static void main(String args[])
     {
-        combine("wxyz");
+        //combine("wxyz");
+        getFilesCount("/Users/rkaushik");
     }
 
     public static void combine(String str)
@@ -31,5 +34,15 @@ public class RecursionProblems {
 
             outstr.setLength(outstr.length() -1);
         }
+    }
+
+    public static int getFilesCount(String inputDir)
+    {
+        int count =0;
+
+        String dir = DirectoryManager.getDirectoryPath(inputDir);
+
+        return count;
+
     }
 }

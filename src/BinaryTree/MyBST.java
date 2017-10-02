@@ -64,6 +64,9 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        int height = getHeightOfTree(root);
+        System.out.println(height);
+
         System.out.println("---BFS order Traversal using Queue---");
         BFSTraversal(root);
 
@@ -346,6 +349,44 @@ public class MyBST
         //Queue to keep track of level and Node
         Queue<Pair<BSTNode,Integer>> q = new LinkedList<Pair<BSTNode, Integer>>();
         q.add(new Pair<BSTNode, Integer>(root,level));
+
+    }
+
+    public static int getHeightOfTree(BSTNode root)
+    {
+        if(root==null)
+            return 0;
+
+        int height=0;
+        int nodeCount=0;
+        Queue<BSTNode> q = new LinkedList<BSTNode>();
+        q.add(root);
+
+        while(true)
+        {
+            if (!q.isEmpty())
+            {
+                nodeCount=q.size();
+
+                while(nodeCount > 0)
+                {
+                    BSTNode node = q.poll();
+
+                    if (node.left != null)
+                        q.add(node.left);
+
+                    if (node.right != null)
+                        q.add(node.right);
+
+                    nodeCount--;
+
+                }
+                height++;
+
+            }
+            else
+                return height;
+        }
 
     }
 }
