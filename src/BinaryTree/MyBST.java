@@ -1,8 +1,10 @@
 package BinaryTree;
 
+
 import LinkedList.Node;
 import com.sun.tools.javac.util.Pair;
 import sun.tools.tree.WhileStatement;
+
 
 import java.util.*;
 
@@ -13,6 +15,22 @@ import java.util.*;
 public class MyBST
 {
     BSTNode root=null;
+
+    public static void main(String[] args)
+    {
+        BinaryTree.Node root = new BinaryTree.Node(10);
+        root.left = new BinaryTree.Node(9);
+        root.right = new BinaryTree.Node(8);
+
+        root.left.left = new BinaryTree.Node(7);
+        root.left.right = new BinaryTree.Node(6);
+
+        root.right.left = new BinaryTree.Node(5);
+        root.right.right = new BinaryTree.Node(4);
+
+        connectToRightNode(root);
+
+    }
 
     public void InsertNode(int data) {
         BSTNode newNode = new BSTNode(data);
@@ -389,4 +407,51 @@ public class MyBST
         }
 
     }
+
+    /*Connect nodes at same level
+    Write a function to connect all the adjacent nodes at the same level in a binary tree. Structure of the given Binary Tree node is like following.
+
+    struct node{
+    int data;
+    struct node* left;
+    struct node* right;
+    struct node* nextRight;*/
+
+    public static void connectToRightNode(BinaryTree.Node root)
+    {
+        if (root == null)
+            return;
+
+        Queue<BinaryTree.Node> q = new LinkedList<BinaryTree.Node>();
+        q.add(root);
+        //to mark the next level
+        q.add(null);
+
+        while(!q.isEmpty())
+        {
+
+            BinaryTree.Node node = q.poll();
+
+            if (node != null)
+            {
+                node.nextRight = q.peek();
+
+
+                if (node.left != null)
+                    q.add(node.left);
+
+                if (node.right != null)
+                    q.add(node.right);
+            }
+                // if queue is not empty, push NULL to mark
+                // nodes at this level are visited
+            else if (!q.isEmpty())
+            {
+                    q.add(null);
+            }
+
+        }
+
+    }
 }
+
