@@ -75,4 +75,29 @@ public class DynamicProgAlgos {
         return result;
     }
 
+    public static void longestPalindromSubStr(String str)
+    {
+        int strLen = str.length();
+        boolean[][] dp = new boolean[strLen][strLen];
+        int maxLength=1;
+
+        //all substring of Length 1 are palindromes
+        for (int i=0;i< strLen;i++)
+            dp[i][i] = true;
+
+        //check for substring of length 2
+
+        for (int i=0;i< strLen;i++)
+        {
+            if(str.charAt(i) == str.charAt(i+1))
+            {
+                dp[i][i+1]=true;
+                maxLength=2;
+            }
+        }
+
+
+
+    }
+
 }

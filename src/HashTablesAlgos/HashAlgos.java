@@ -15,7 +15,9 @@ public class HashAlgos
         //boolean result = checkStringUniqueCharacter("I am Rohit");
         //System.out.println(result);
 
-        boolean result =  checkPermutation("kaushik","kihsuak");
+        //boolean result =  checkPermutation("kaushik","kihsuak");
+
+        String result = bullsAndCowsGame("1807","7810");
         System.out.println(result);
     }
 
@@ -112,4 +114,74 @@ public class HashAlgos
         return total;
     }
 
+
+    /*
+    You are playing the following Bulls and Cows game with your friend: You write down a number and
+    ask your friend to guess what the number is. Each time your friend makes a guess, you provide a hint that
+    indicates how many digits in said guess match your secret number exactly in both digit and position (called "bulls")
+    and how many digits match the secret number but locate in the wrong position (called "cows").
+    Your friend will use successive guesses and hints to eventually derive the secret number.
+
+    For example:
+    Secret number: "1807"
+    Friend's guess: "7810"
+
+    Hint: 1 bull and 3 cows. (The bull is 8, the cows are 0, 1 and 7.)
+    Write a function to return a hint according to the secret number and friend's guess, use A to indicate the bulls
+    and B to indicate the cows. In the above example, your function should return "1A3B".
+    */
+    public static String bullsAndCowsGame(String secret, String guess)
+    {
+        int countBulls=0;
+        int countCows=0;
+
+        HashMap<Character,Integer> map = new HashMap<Character, Integer>();
+
+        //count Bulls
+        for(int i=0;i<secret.length();i++)
+        {
+            char s = secret.charAt(i);
+            char g = guess.charAt(i);
+
+            if(s==g){
+                countBulls++;
+            }
+            else{
+                if(map.containsKey(s))
+                {
+                    int freq = map.get(s);
+                    freq++;
+                    map.put(s,freq);
+                }
+                else{
+                    map.put(s,1);
+                }
+            }
+        }
+
+        //count cows
+        for(int i=0;i<secret.length();i++)
+        {
+            char s = secret.charAt(i);
+            char g = guess.charAt(i);
+
+            if(s!=g){
+                if(map.containsKey(g)){
+                    countCows++;
+                   int freq = map.get(g);
+                    if(freq==1)
+                    {
+                        map.remove(g);
+                    }
+                    else {
+                        freq--;
+                        //update the freq in the map
+                        map.put(g, freq);
+                    }
+                }
+            }
+        }
+
+        return countBulls + "Bulls" + countCows + "Cows";
+    }
 }
