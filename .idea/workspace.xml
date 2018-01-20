@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6551fe3a-7adb-4ddd-ac8d-5dfe825715b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DynamicProgramming/DynamicProgAlgos.java" afterPath="$PROJECT_DIR$/src/DynamicProgramming/DynamicProgAlgos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" afterPath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" afterPath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,16 +121,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.33451957" vertical-offset="968" max-vertical-offset="1620">
-              <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="1620">
+              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
               <folding>
                 <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
                 <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
                 <element signature="method#cooldownProblem#0;class#HashAlgos#0" expanded="false" />
                 <element signature="e#3984#4004#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedListMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="735">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7597865" vertical-offset="563" max-vertical-offset="1125">
+              <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+              <folding>
+                <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -144,19 +170,6 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1305">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecursionProblems.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecursionProblems.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="525">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-              <folding>
-                <element signature="method#combine#0;class#RecursionProblems#0" expanded="false" />
-                <element signature="method#doCombine#0;class#RecursionProblems#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -205,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/BitManipulation/BitAlgos.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/BSTMain.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/LinkedListMain.java" />
-        <option value="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/StackQueue/DesignStack.java" />
         <option value="$PROJECT_DIR$/src/ArrayAlgos.java" />
         <option value="$PROJECT_DIR$/src/RecursionProblems.java" />
@@ -214,6 +226,7 @@
         <option value="$PROJECT_DIR$/src/BinaryTree/MyBST.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/DynamicProgAlgos.java" />
         <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -277,6 +290,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LinkedList" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1145,8 +1176,14 @@
           <properties />
           <option name="timeStamp" value="159" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="160" />
+      <option name="time" value="161" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1251,9 +1288,10 @@
             <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#PrintList#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1287,9 +1325,10 @@
             <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#PrintList#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1323,9 +1362,10 @@
             <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#PrintList#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1541,33 +1581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="735">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="656" max-vertical-offset="1290">
-          <caret line="125" column="28" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="28" />
-          <folding>
-            <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#PrintList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1700,13 +1717,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33451957" vertical-offset="968" max-vertical-offset="1620">
-          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="1620">
+          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
           <folding>
             <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
             <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
             <element signature="method#cooldownProblem#0;class#HashAlgos#0" expanded="false" />
             <element signature="e#3984#4004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="735">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7597865" vertical-offset="563" max-vertical-offset="1125">
+          <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+          <folding>
+            <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddInMiddle#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#findNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>

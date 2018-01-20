@@ -161,4 +161,28 @@ public class MyLinkedList
 
         return newlist;
     }
+
+    /*Given a sorted linked list, delete all duplicates such that each element appear only once.
+    For example,
+    Given 1->1->2, return 1->2.
+    Given 1->1->2->3->3, return 1->2->3.*/
+
+    public void RemoveDuplicates()
+    {
+        if (head==null || head.next==null)
+        {
+            return;
+        }
+        Node current = head;
+
+        while(current !=null)
+        {
+            if(current.data == current.next.data) {
+                current.next=current.next.next;
+            }
+            else {
+                current= current.next;
+            }
+        }
+    }
 }
