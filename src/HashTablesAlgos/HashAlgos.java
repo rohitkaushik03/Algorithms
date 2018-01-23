@@ -17,8 +17,12 @@ public class HashAlgos
 
         //boolean result =  checkPermutation("kaushik","kihsuak");
 
-        String result = bullsAndCowsGame("1807","7810");
-        System.out.println(result);
+        //String result = bullsAndCowsGame("1807","7810");
+        //System.out.println(result);
+
+        int[] inputArr = {2,7,11,15};
+        int[] result =  TwoSum(inputArr,9);
+        System.out.print(result[0] + "," + result[1]);
     }
 
 
@@ -183,5 +187,39 @@ public class HashAlgos
         }
 
         return countBulls + "Bulls" + countCows + "Cows";
+    }
+
+    /*
+    Given an array of integers, find two numbers such that they add up to a specific target number.
+    The function twoSum should return indices of the two numbers such that they add up to the target
+    For example:
+    Input: numbers={2, 7, 11, 15}, target=9
+    Output: index1=0, index2=1
+    */
+
+    public static int[] TwoSum(int[] inputArr, int target)
+    {
+        if (inputArr==null || inputArr.length <2)
+            return new int[]{0,0};
+
+        int[] result = new int[2];
+
+        HashMap<Integer,Integer> map = new HashMap<Integer, Integer>();
+
+        for (int i=0;i<inputArr.length;i++)
+        {
+            if(map.containsKey(inputArr[i]))
+            {
+                result[0] = map.get(inputArr[i]);
+                result[1] = i;
+                break;
+            }
+            else
+            {
+                int tempSum = target - inputArr[i];
+                map.put(tempSum,i);
+            }
+        }
+        return result;
     }
 }

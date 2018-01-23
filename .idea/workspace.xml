@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6551fe3a-7adb-4ddd-ac8d-5dfe825715b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" afterPath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" afterPath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,16 +121,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="1620">
-              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.20106761" vertical-offset="533" max-vertical-offset="1410">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
                 <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
                 <element signature="method#cooldownProblem#0;class#HashAlgos#0" expanded="false" />
-                <element signature="e#3984#4004#0" expanded="true" />
+                <element signature="method#bullsAndCowsGame#0;class#HashAlgos#0" expanded="false" />
+                <element signature="e#4126#4146#0" expanded="true" />
+                <element signature="e#5903#5921#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7597865" vertical-offset="563" max-vertical-offset="1125">
-              <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1125">
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
                 <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
@@ -225,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/BinaryTree/Node.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/MyBST.java" />
         <option value="$PROJECT_DIR$/src/DynamicProgramming/DynamicProgAlgos.java" />
-        <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
       </list>
     </option>
   </component>
@@ -326,42 +328,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HashTablesAlgos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DynamicProgramming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BinaryTree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1166,15 +1132,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java</url>
-          <line>135</line>
+          <line>139</line>
           <properties />
           <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java</url>
@@ -1182,8 +1142,20 @@
           <properties />
           <option name="timeStamp" value="160" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java</url>
+          <line>201</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="161" />
+      <option name="time" value="163" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1644,8 +1616,8 @@
         <state vertical-scroll-proportion="0.23255815" vertical-offset="0" max-vertical-offset="903">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="false" />
+            <element signature="e#206#207#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1715,19 +1687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="1620">
-          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
-          <folding>
-            <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
-            <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
-            <element signature="method#cooldownProblem#0;class#HashAlgos#0" expanded="false" />
-            <element signature="e#3984#4004#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="735">
@@ -1738,8 +1697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7597865" vertical-offset="563" max-vertical-offset="1125">
-          <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1125">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding>
             <element signature="method#Add#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddInFront#0;class#MyLinkedList#0" expanded="false" />
@@ -1748,6 +1707,21 @@
             <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.20106761" vertical-offset="533" max-vertical-offset="1410">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
+            <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
+            <element signature="method#cooldownProblem#0;class#HashAlgos#0" expanded="false" />
+            <element signature="method#bullsAndCowsGame#0;class#HashAlgos#0" expanded="false" />
+            <element signature="e#4126#4146#0" expanded="true" />
+            <element signature="e#5903#5921#0" expanded="true" />
           </folding>
         </state>
       </provider>
