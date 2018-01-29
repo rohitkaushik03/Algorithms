@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6551fe3a-7adb-4ddd-ac8d-5dfe825715b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" afterPath="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayAlgos.java" afterPath="$PROJECT_DIR$/src/ArrayAlgos.java" />
     </list>
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2266" max-vertical-offset="6315">
-              <caret line="245" column="29" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.33274022" vertical-offset="1433" max-vertical-offset="3840">
+              <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
@@ -39,6 +39,8 @@
                 <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
@@ -49,13 +51,17 @@
                 <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
-                <element signature="e#23575#23596#0" expanded="false" />
+                <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+                <element signature="e#23657#23678#0" expanded="false" />
                 <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
               </folding>
@@ -121,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashAlgos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.20106761" vertical-offset="533" max-vertical-offset="1410">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="1410">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
                 <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
@@ -221,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/BinaryTree/BSTMain.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/LinkedListMain.java" />
         <option value="$PROJECT_DIR$/src/StackQueue/DesignStack.java" />
-        <option value="$PROJECT_DIR$/src/ArrayAlgos.java" />
         <option value="$PROJECT_DIR$/src/RecursionProblems.java" />
         <option value="$PROJECT_DIR$/src/SortingAlgos.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/Node.java" />
@@ -229,6 +234,7 @@
         <option value="$PROJECT_DIR$/src/DynamicProgramming/DynamicProgAlgos.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java" />
+        <option value="$PROJECT_DIR$/src/ArrayAlgos.java" />
       </list>
     </option>
   </component>
@@ -354,7 +360,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Application.HashAlgos">
+  <component name="RunManager" selected="Application.ArrayAlgos">
     <configuration default="false" name="BSTMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -759,7 +765,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,7 +774,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882413" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36627284" sideWeight="0.74023306" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36627284" sideWeight="0.74023306" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42637363" sideWeight="0.25976697" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -970,25 +976,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>107</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>672</line>
+          <line>676</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>690</line>
+          <line>694</line>
           <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>704</line>
+          <line>708</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
@@ -1006,49 +1012,49 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>728</line>
+          <line>732</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>738</line>
+          <line>742</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>757</line>
+          <line>761</line>
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>805</line>
+          <line>809</line>
           <properties />
           <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>632</line>
+          <line>636</line>
           <properties />
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>821</line>
+          <line>825</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>835</line>
+          <line>839</line>
           <properties />
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>868</line>
+          <line>872</line>
           <properties />
           <option name="timeStamp" value="132" />
         </line-breakpoint>
@@ -1066,13 +1072,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>861</line>
+          <line>865</line>
           <properties />
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>907</line>
+          <line>911</line>
           <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
@@ -1090,7 +1096,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
-          <line>571</line>
+          <line>575</line>
           <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
@@ -1154,8 +1160,20 @@
           <properties />
           <option name="timeStamp" value="162" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
+          <line>990</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="163" />
+      <option name="time" value="165" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1193,6 +1211,8 @@
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
@@ -1203,13 +1223,17 @@
             <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#23575#23596#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23657#23678#0" expanded="false" />
             <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
@@ -1367,6 +1391,8 @@
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
@@ -1377,13 +1403,17 @@
             <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#23575#23596#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23657#23678#0" expanded="false" />
             <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
@@ -1408,6 +1438,8 @@
             <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
@@ -1418,13 +1450,17 @@
             <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#23575#23596#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23657#23678#0" expanded="false" />
             <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
@@ -1653,40 +1689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2266" max-vertical-offset="6315">
-          <caret line="245" column="29" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#hasSumExists#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#getMaximumTime#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#finMinTicketsCost#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#CountNumbers#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="e#23575#23596#0" expanded="false" />
-            <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
-            <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="735">
@@ -1713,8 +1715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HashTablesAlgos/HashAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.20106761" vertical-offset="533" max-vertical-offset="1410">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="1410">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="method#checkStringUniqueCharacter#0;class#HashAlgos#0" expanded="false" />
             <element signature="method#checkPermutation#0;class#HashAlgos#0" expanded="false" />
@@ -1722,6 +1724,46 @@
             <element signature="method#bullsAndCowsGame#0;class#HashAlgos#0" expanded="false" />
             <element signature="e#4126#4146#0" expanded="true" />
             <element signature="e#5903#5921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274022" vertical-offset="1433" max-vertical-offset="3840">
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#hasSumExists#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#getMaximumTime#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#finMinTicketsCost#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CountNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23657#23678#0" expanded="false" />
+            <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -62,8 +62,8 @@ public class ArrayAlgos {
         //int[] arr = {0, 2, 1, 0, 1, 2};
         //int[] result =  dutchFlagProblem(arr);
 
-        String result = LookAndSayNumbers(4);
-        System.out.println(result);
+        //String result = LookAndSayNumbers(4);
+        //System.out.println(result);
 
         //int[] height = {2,1,5,6,2,3};
         //largestRectangleArea(height);
@@ -102,6 +102,10 @@ public class ArrayAlgos {
         String wordMatch = "payment very successfully";
       //  int result= SearchPattern(wordInput, wordMatch);
        // System.out.println(result);
+
+        int[] arr = {1, 0, 1, 0, 1, 0, 1, 0};
+        SortBinaryArray(arr);
+
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -972,6 +976,35 @@ public class ArrayAlgos {
         b.clear();
         for(Map.Entry<String, Integer> entry : a.entrySet())
             b.put(entry.getKey(), entry.getValue());
+    }
+
+    /*
+    Sort a binary array using one traversal
+    Given a binary array, sort it using one traversal and no extra space.
+    Examples:
+    Input : 1 0 1 0 1 0 1 0
+    Output : 0 0 0 0 1 1 1 1
+    */
+
+    public static int[] SortBinaryArray(int[] InputArr)
+    {
+        int start=0;
+        int current=0;
+
+        while(current < InputArr.length)
+        {
+            if(InputArr[current]==0)
+            {
+                int temp = InputArr[start];
+                InputArr[start] = InputArr[current];
+                InputArr[current] = temp;
+                start++;
+                current++;
+            }
+            else
+                current++;
+        }
+        return InputArr;
     }
 }
 
