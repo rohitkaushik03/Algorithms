@@ -30,6 +30,8 @@ public class MyBST
 
         connectToRightNode(root);
 
+
+
     }
 
     public void InsertNode(int data) {
@@ -82,6 +84,9 @@ public class MyBST
 
     public void CallInOrderTraversal()
     {
+        boolean result =  isBinarySearchTree(root);
+        System.out.println("is Binary Search Tree? "  + result);
+
         int height = getHeightOfTree(root);
         System.out.println(height);
 
@@ -107,6 +112,8 @@ public class MyBST
 
         System.out.println("---Morris traversal---");
         MorrisTraversal(root);
+
+
 
     }
 
@@ -452,6 +459,46 @@ public class MyBST
 
         }
 
+    }
+
+    //check if Binary Tree is a Binary Search tree
+    public static boolean isBinarySearchTree(BSTNode root)
+    {
+        //so the idea is to traverse the tree in InOrder traversal, it gives the items in sorted order,
+        // then check if the order is not sorted then its not BST.
+
+        //if root is null that means its a BST
+        if (root==null)
+            return true;
+
+        ArrayList<Integer> lst = new ArrayList<Integer>();
+        Stack<BSTNode> stk = new Stack<BSTNode>();
+
+        while(true)
+        {
+
+            if (root != null)
+            {
+                stk.push(root);
+                root = root.left;
+            }
+            else
+            {
+                if (stk.isEmpty())
+                    break;
+                root = stk.pop();
+                lst.add(root.data);
+                root = root.right;
+            }
+        }
+
+        for (int i=0;i<lst.size()-1;i++)
+        {
+            if(lst.get(i) > lst.get(i+1))
+                return false;
+        }
+
+        return true;
     }
 }
 

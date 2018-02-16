@@ -31,7 +31,7 @@ public class ArrayAlgos {
 
         //spiralPrinting(4,4,mat);
 
-        //boolean result = isUniqueCharacter("america");
+        boolean result = isUniqueCharacter("america");
 
         //int[] arr = {98,23,54,12,20,7,27};
         //NextGreatestElement(arr);
@@ -104,7 +104,7 @@ public class ArrayAlgos {
        // System.out.println(result);
 
         int[] arr = {1, 0, 1, 0, 1, 0, 1, 0};
-        SortBinaryArray(arr);
+        //SortBinaryArray(arr);
 
     }
 
