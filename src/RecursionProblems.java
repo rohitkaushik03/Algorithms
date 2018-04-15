@@ -1,5 +1,6 @@
-import com.sun.tools.doclets.internal.toolkit.util.DirectoryManager;
+//import com.sun.tools.doclets.internal.toolkit.util.DirectoryManager;
 
+import javax.naming.spi.DirectoryManager;
 /**
  * Created by rkaushik on 6/30/17.
  */
@@ -40,7 +41,9 @@ public class RecursionProblems {
     {
         int count =0;
 
-        String dir = DirectoryManager.getDirectoryPath(inputDir);
+
+
+        //String dir = DirectoryManager.getDirectoryPath(inputDir);
 
         return count;
 

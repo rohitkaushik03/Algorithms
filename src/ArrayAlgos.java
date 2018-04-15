@@ -106,6 +106,12 @@ public class ArrayAlgos {
         int[] arr = {1, 0, 1, 0, 1, 0, 1, 0};
         //SortBinaryArray(arr);
 
+        String calInput="12+13";
+        //int calResult =  CalculateFromString(calInput);
+
+        boolean resultP =  checkPermutation("test","estt");
+
+
     }
 
     public static Integer getMajorityElement(int[] arr)
@@ -1005,6 +1011,63 @@ public class ArrayAlgos {
                 current++;
         }
         return InputArr;
+    }
+
+    public static int CalculateFromString(String s) {
+        Stack<Integer> stack = new Stack<Integer>();
+        int result = 0;
+        int number = 0;
+        int sign = 1;
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if(Character.isDigit(c)){
+                number = 10 * number + (int)(c - '0');
+            }else if(c == '+'){
+                result += sign * number;
+                number = 0;
+                sign = 1;
+            }else if(c == '-'){
+                result += sign * number;
+                number = 0;
+                sign = -1;
+            }else if(c == '('){
+                //we push the result first, then sign;
+                stack.push(result);
+                stack.push(sign);
+                //reset the sign and result for the value in the parenthesis
+                sign = 1;
+                result = 0;
+            }else if(c == ')'){
+                result += sign * number;
+                number = 0;
+                result *= stack.pop();    //stack.pop() is the sign before the parenthesis
+                result += stack.pop();   //stack.pop() now is the result calculated before the parenthesis
+
+            }
+        }
+        if(number != 0) result += sign * number;
+        return result;
+    }
+
+    //Find Whether Two Strings are Permutation of each other
+    public static boolean checkPermutation(String str1, String str2)
+    {
+        //idea is to count the characters in the string
+        if(str1.length() != str2.length())
+            return false;
+
+        int[] letters = new int[128];
+        for (char chr:str1.toCharArray()) {
+            letters[chr]++;
+        }
+
+        for (char chr:str2.toCharArray()) {
+            letters[chr]--;
+            if (letters[chr] < 0)
+                return false;
+        }
+
+        return true;
     }
 }
 
