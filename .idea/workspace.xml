@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04479694-79b6-425a-b36d-8882ca9c9bca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/ArrayAlgos.class" afterPath="$PROJECT_DIR$/out/production/Algorithms/ArrayAlgos.class" />
       <change beforePath="$PROJECT_DIR$/src/ArrayAlgos.java" afterPath="$PROJECT_DIR$/src/ArrayAlgos.java" />
-      <change beforePath="$PROJECT_DIR$/src/RecursionProblems.java" afterPath="$PROJECT_DIR$/src/RecursionProblems.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +19,8 @@
       <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1822">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+            <state relative-caret-position="354">
+              <caret line="1075" column="61" lean-forward="false" selection-start-line="1075" selection-start-column="61" selection-end-line="1075" selection-end-column="61" />
               <folding>
                 <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
@@ -74,7 +66,38 @@
                 <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="e#27067#27076#0" expanded="true" />
+                <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyBST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/MyBST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,6 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -130,6 +155,12 @@
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -148,9 +179,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,7 +324,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -311,12 +339,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -339,8 +368,14 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayAlgos.java</url>
+          <line>1016</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -394,28 +429,39 @@
             <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="e#27067#27076#0" expanded="true" />
+            <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StackQueue/DesignStack.java">
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecursionProblems.java">
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/MyBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1822">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
@@ -461,6 +507,207 @@
             <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="e#27067#27076#0" expanded="true" />
+            <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#6234#6297#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#8059#8068#0" expanded="true" />
+            <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#9384#9393#0" expanded="true" />
+            <element signature="method#hasSumExists#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#getMaximumTime#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#10821#10830#0" expanded="true" />
+            <element signature="method#finMinTicketsCost#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CountNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#12715#12724#0" expanded="true" />
+            <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#16235#16244#0" expanded="true" />
+            <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#18513#18533#0" expanded="true" />
+            <element signature="e#18661#18670#0" expanded="true" />
+            <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#19032#19041#0" expanded="true" />
+            <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23811#23832#0" expanded="false" />
+            <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#24396#24413#0" expanded="true" />
+            <element signature="e#25046#25063#0" expanded="true" />
+            <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#27067#27076#0" expanded="true" />
+            <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#6234#6297#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#8059#8068#0" expanded="true" />
+            <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#9384#9393#0" expanded="true" />
+            <element signature="method#hasSumExists#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#getMaximumTime#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#10821#10830#0" expanded="true" />
+            <element signature="method#finMinTicketsCost#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CountNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#12715#12724#0" expanded="true" />
+            <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#16235#16244#0" expanded="true" />
+            <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#18513#18533#0" expanded="true" />
+            <element signature="e#18661#18670#0" expanded="true" />
+            <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#19032#19041#0" expanded="true" />
+            <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23811#23832#0" expanded="false" />
+            <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#24396#24413#0" expanded="true" />
+            <element signature="e#25046#25063#0" expanded="true" />
+            <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#27067#27076#0" expanded="true" />
+            <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackQueue/DesignStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecursionProblems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/MyBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="1075" column="61" lean-forward="false" selection-start-line="1075" selection-start-column="61" selection-end-line="1075" selection-end-column="61" />
+          <folding>
+            <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#ReverseString2#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#swapChar#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#spiralPrinting#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#6234#6297#0" expanded="false" />
+            <element signature="method#isUniqueCharacter#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#NextGreatestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#8059#8068#0" expanded="true" />
+            <element signature="method#leftRotateArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#kthLargestElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#9384#9393#0" expanded="true" />
+            <element signature="method#hasSumExists#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#getMaximumTime#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#10821#10830#0" expanded="true" />
+            <element signature="method#finMinTicketsCost#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CountNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#12715#12724#0" expanded="true" />
+            <element signature="method#MultiplicationElement#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#dutchFlagProblem#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#LookAndSayNumbers#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#largestRectangleArea#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#16235#16244#0" expanded="true" />
+            <element signature="method#number25PercentTimes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#multiple#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#combinationSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#18513#18533#0" expanded="true" />
+            <element signature="e#18661#18670#0" expanded="true" />
+            <element signature="method#combinationSum#1;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#19032#19041#0" expanded="true" />
+            <element signature="method#maximumSumSubArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#smallestSubWithSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MaxRectangleAreaOf1s#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#MoveZeroes#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#computeSum#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#23811#23832#0" expanded="false" />
+            <element signature="method#SearchPattern#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#24396#24413#0" expanded="true" />
+            <element signature="e#25046#25063#0" expanded="true" />
+            <element signature="method#DeepCopyMap#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#SortBinaryArray#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
+            <element signature="e#27067#27076#0" expanded="true" />
+            <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
           </folding>
         </state>
       </provider>
