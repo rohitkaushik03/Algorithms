@@ -185,4 +185,24 @@ public class MyLinkedList
             }
         }
     }
+
+
+    /* Given a Linked List and a number n, write a function that returns the value at the n’th node
+    from end of the Linked List.*/
+    public static Node findKthLastElement(Node head, int K)
+    {
+        Node p1 = head;
+        Node p2 = head;
+
+        for(int i=0;i<K;i++){
+            p2=p2.next;
+        }
+
+        while(p2.next!=null){
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        return p1;
+    }
 }

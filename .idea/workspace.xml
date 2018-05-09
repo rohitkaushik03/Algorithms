@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04479694-79b6-425a-b36d-8882ca9c9bca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/ArrayAlgos.class" afterPath="$PROJECT_DIR$/out/production/Algorithms/ArrayAlgos.class" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayAlgos.java" afterPath="$PROJECT_DIR$/src/ArrayAlgos.java" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" afterPath="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArrayAlgos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="1075" column="61" lean-forward="false" selection-start-line="1075" selection-start-column="61" selection-end-line="1075" selection-end-column="61" />
+            <state relative-caret-position="384">
+              <caret line="1077" column="5" lean-forward="false" selection-start-line="1077" selection-start-column="5" selection-end-line="1077" selection-end-column="5" />
               <folding>
                 <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
                 <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
@@ -72,6 +70,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LinkedListMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="190" column="4" lean-forward="false" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+              <folding>
+                <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#RemoveDuplicates#0;class#MyLinkedList#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BSTMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/BSTMain.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,6 +140,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/RecursionProblems.java" />
         <option value="$PROJECT_DIR$/src/ArrayAlgos.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/MyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -161,6 +185,12 @@
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -660,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayAlgos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="1075" column="61" lean-forward="false" selection-start-line="1075" selection-start-column="61" selection-end-line="1075" selection-end-column="61" />
+        <state relative-caret-position="384">
+          <caret line="1077" column="5" lean-forward="false" selection-start-line="1077" selection-start-column="5" selection-end-line="1077" selection-end-column="5" />
           <folding>
             <element signature="method#getMajorityElement#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="method#stairSearch#0;class#ArrayAlgos#0" expanded="false" />
@@ -708,6 +738,27 @@
             <element signature="method#CalculateFromString#0;class#ArrayAlgos#0" expanded="false" />
             <element signature="e#27067#27076#0" expanded="true" />
             <element signature="method#checkPermutation#0;class#ArrayAlgos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkedList/MyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="190" column="4" lean-forward="false" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
+          <folding>
+            <element signature="method#DeleteNode#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#ReverseLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#AddTwoNumbers#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#RemoveDuplicates#0;class#MyLinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>
